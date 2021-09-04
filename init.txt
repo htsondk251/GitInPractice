@@ -4,3 +4,6 @@ add content to try another commit
 add content to try git fetch
 
 Chapter 2 - remote branch
+create remote branch
+git push
+git merge
