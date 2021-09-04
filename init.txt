@@ -1,4 +1,7 @@
 Git In Practice
 
-add content to try another commit
-add content to try git fetch
+Chapter1 - local repository
+- create a local repository
+- git add
+- git diff
+- git commit -- create a commit to local repo
