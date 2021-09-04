@@ -8,6 +8,11 @@ Chapter1 - local repository
 
 
 Chapter 2 - remote branch
-create remote branch
-git push
-git merge
+- create remote branch
+- git clone
+- git pull
+- git fetch
+- git push
+- git branch
+- git checkout
+- git merge
