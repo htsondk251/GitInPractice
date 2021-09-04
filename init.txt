@@ -5,3 +5,9 @@ Chapter1 - local repository
 - git add
 - git diff
 - git commit -- create a commit to local repo
+
+
+Chapter 2 - remote branch
+create remote branch
+git push
+git merge
