@@ -1,3 +1,4 @@
 Git In Practice
 
-add content to try another commit 
+add content to try another commit
+add content to try git fetch
