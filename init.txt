@@ -2,9 +2,11 @@ Git In Practice
 
 Chapter1 - local repository
 - create a local repository
+- git init
 - git add
 - git diff
 - git commit -- create a commit to local repo
+- gitk
 
 
 Chapter 2 - remote branch
