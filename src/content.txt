@@ -57,3 +57,4 @@ Chapter 5 - advanced branching
 - git describe --tags	//generate a version
 - git describe --tags [--long] [--abbrev=5]
 - git cherry-pick
+- git revert
