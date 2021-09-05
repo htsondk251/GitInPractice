@@ -56,5 +56,7 @@ Chapter 5 - advanced branching
 - git tag -d		//delete tag
 - git describe --tags	//generate a version
 - git describe --tags [--long] [--abbrev=5]
-- git cherry-pick
-- git revert
+- git cherry-pick <branch-name> //cherry-pick the latest commit of the branch, if ahead 2 commits -> fails
+- git cherry-pick <ref>		//cherry-pick the specific commit; in case of conflicts: resolve and run: git add <path> >> git cherry-pick --continue
+- git cherry-pick --abort
+- git revert <ref>		//create a (revert) commit and reverse <ref> commit
