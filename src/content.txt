@@ -49,5 +49,11 @@ Chapter 5 - advanced branching
 - git merge --no-ff	//always create merge commit; in case of conflicts: resolve and run: git add <path> >> git commit 
 - git rerere --global --add rerere.enabled 1	//enable git rerere
 - git rerere forget <path>	//forget a bad or incorrect conflict resolution
-- git tag 
-
+- git tag <version>	//tag
+- git tag		//list all tags
+- git tag -l --v0.*	//search tags by pattern
+- git tag -f		//update tag to point to a new commit
+- git tag -d		//delete tag
+- git describe --tags	//generate a version
+- git describe --tags [--long] [--abbrev=5]
+- git cherry-pick
