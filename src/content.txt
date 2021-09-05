@@ -1,6 +1,6 @@
 Git In Practice
 
-Chapter1 - local repository
+Chapter 1 - local repository
 - create a local repository
 - git init
 - git add
@@ -18,3 +18,36 @@ Chapter 2 - remote branch
 - git branch
 - git checkout
 - git merge
+
+
+Chapter 3 - filesystem
+- git mv <path> <path>
+- git rm <path> [-rf] [-n]
+- git rm <path> -n	//simulated
+- git ls-files		//tracked files 
+- git ls-files -o	//untracked files
+- git clean -f -X	//remove ignored files from working directory
+- git clean -f -x	//remove ignored files and untracked files 
+- git clean -n		//simulated
+- git update-index --assume-unchanged <path>	//ignore changes in file <path>
+- git ls-files -v	//list all assume-unchanged files
+- git update-index --no-assume-unchanged <path>	//ignore changes in file <path>
+
+
+Chapter 4 - history
+- git log -n	//limit the number of commit to be shown
+- git log --author --after --since --before --until --grep --reverse --merges 
+- git log --p	//show diff
+- git log --oneline --graph --decorate
+- git show
+- git shortlog
+- git blame <path>
+- git bisect
+
+
+Chapter 5 - advanced branching
+- git merge --no-ff	//always create merge commit; in case of conflicts: resolve and run: git add <path> >> git commit 
+- git rerere --global --add rerere.enabled 1	//enable git rerere
+- git rerere forget <path>	//forget a bad or incorrect conflict resolution
+- git tag 
+
