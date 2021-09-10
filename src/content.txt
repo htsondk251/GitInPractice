@@ -60,3 +60,21 @@ Chapter 5 - advanced branching
 - git cherry-pick <ref>		//cherry-pick the specific commit; in case of conflicts: resolve and run: git add <path> >> git cherry-pick --continue
 - git cherry-pick --abort
 - git revert <ref>		//create a (revert) commit and reverse <ref> commit
+
+
+Chapter 6 - rewrite history
+- git reflog [ref]	//default = HEAD
+- git reflog master
+- git fsck		//when disk corrupt, to check the integrity of the repository
+- git reset [ref] --hard	//reset to previous commit (both staging and working directories)
+- git reset [ref]		// ~ --mixed : reset to the staging to the previous commit
+- git reset [ref] --soft	//move the HEAD pointer to the previous commit
+- git commit --amend		//reset to the previous commit and create a new commit with the same commit message as the commit that was just reset
+- git rebase		//merge and rewrite history; when have > 1 commit, merge each commit 1 time -> SHA-1 of all commit in chap6 branch will change
+- git rebase --skip	//when rebasing branch has > 1 commit and next commit include change in previous commit, --skip will skip this commit and check the next commit for conflict (if any)
+- (git add) git rebase --continue	//continue after resolve conflicts
+- git rebase --abort	//abort rebasing
+- git pull --rebase	// ~ git fetch + git rebase
+- git push -f		//some git version will push all branches with matching local and remote branch names
+- git push origin +[branch-name-to-push]	//safer than git push -f
+- git filter branch	//not read yet, so dangerous
