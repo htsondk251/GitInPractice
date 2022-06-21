@@ -78,3 +78,14 @@ Chapter 6 - rewrite history
 - git push -f		//some git version will push all branches with matching local and remote branch names
 - git push origin +[branch-name-to-push]	//safer than git push -f
 - git filter branch	//not read yet, so dangerous
+
+
+
+
+
+- git switch <commit-hash>	//detached HEAD @ specific commit
+- git swtich HEAD~3		//detached HEAD @ 3 commit before
+- git switch <branch-name>	//to specific branch reference
+- git switch -			//to current-branch reference
+- git checkout HEAD <file1> <file2>	//reset files' content to HEAD reference
+- git checkout -- <file1> <file2>	//same as above
